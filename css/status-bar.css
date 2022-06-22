@@ -7,17 +7,20 @@
     width: 33%;
 }
 .status-bar span {
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
 }
 .status-bar__column:first-child .fa-signal{
     margin-right: 2px;
 }
+
 .status-bar__column:first-child span{
     margin-right: 3px;
 }
 .status-bar__column:nth-child(2){
     display: flex;
     justify-content: center;
+    text-align: ;
 }
 .status-bar__column:last-child{
     display: flex;
