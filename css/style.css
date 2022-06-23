@@ -1,77 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
+/* Components */
+@import "components/status-bar.css";
+/* Screens */
+@import "screens/login.css";
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
-}
-
-.welcome-header {
-    margin: 60px 0px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.welcome-header__title{
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 500;
-}
-.welcome-header__text {
-    width: 70%;
-    opacity: 0.5;
-    font-size: 14px;
-    line-height: 145%;
-}
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 25px;
-}
-
-#login-form input{
-    border: none;
-    padding: 15px 0px;
-    font-weight: 500;
-}
-
-#login-form input:not([type="submit"]) {
-    font-size: 16px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-    transition: border-color 0.2s;
-}
-
-#login-form input[type="password"] {
-    margin-bottom: 25px;
-}
-
-#login-form input[type="submit"] {
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 2px;
-}
-
-#login-form input::placeholder {
-    color: rgba(0,0,0,0.4);
-}
-
-#login-form input:focus {
-    border-color: var(--yellow);
-}
-
-#login-form input[value="Log In"] {
-    background-color: var(--yellow);
-    margin-bottom: 10px;
-}
-
-#login-form a {
-    margin-top: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 12px;
-    color:rgba(0,0,0,0.8);
 }
