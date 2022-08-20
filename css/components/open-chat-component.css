@@ -1,0 +1,96 @@
+.open-chat-component{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border-option);
+}
+.open-chat-component:last-child{
+    border:none;
+}
+.open-chat-component__column{
+    position: relative;
+}
+.open-chat-component__column h2 {
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 7px;
+}
+.open-chat-component__chat-info{
+    display:flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.open-chat-component__chat-info img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: var(--border-option);
+}
+.open-chat-component__chat-member{
+    font-size: 11px;
+    color: var(--gray);
+    margin-left: 5px;
+}
+.open-chat-component__chat-info .divider{
+    background-color: var(--light-gray);
+    width: 1px;
+    height: 10px;
+    margin: 0px 5px;
+}
+.open-chat-component__chat-active{
+    font-size: 11px;
+    color: rgb(255,78,249);
+}
+.open-chat-component__channel-thumbnail{
+    width:80px;
+    height:80px;
+    object-fit: cover;
+    border-radius:10%;
+    border: var(--border-option);
+    padding: 0px;
+}
+.open-chat-component__heart{
+    width: 45px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 300;
+    border-radius: 1.5em;
+    color: rgb(255,255,255);
+    background-color: rgba(0,0,0,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.7px;
+    position: absolute;
+    right: 6px;
+    bottom: 8px;
+}
+.open-chat-component__heart i{
+    margin-right: 2px;
+    position:relative;
+    top:1px;
+}
+@keyframes heartbeat{
+    47%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(2);
+    }
+    79%{
+        color: rgb(255, 141, 121);
+        transform: scale(1);
+    }
+    90%{
+        color: white;
+        transform: none;
+    }
+}
+.open-chat-component__heart:hover i{
+    will-change: transform;
+    animation: heartbeat 1.3s infinite;
+}

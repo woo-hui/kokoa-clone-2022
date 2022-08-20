@@ -1,0 +1,41 @@
+.screen-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--horizontal-space);
+    align-items: center;
+    position:fixed;
+    top:23px;
+    width:100%;
+    box-sizing:border-box;
+    z-index: 1;
+}
+.screen-header__title{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.screen-header__icons .fa-magnifying-glass{
+    margin-right: 15px;
+}
+.screen-header__icons .fa-music{
+    margin-right: 15px;
+}
+.fa-comment-dots{
+    margin-right: 15px;
+}
+
+@keyframes headericon {
+    0%{
+        transform: none;
+    }
+    50%{
+        transform:translateY(-4px) rotateY(270deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+.screen-header__icons i:hover{
+    animation: headericon 2s linear infinite;
+}

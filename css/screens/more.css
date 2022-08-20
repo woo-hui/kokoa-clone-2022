@@ -1,0 +1,27 @@
+.more-suggestions{
+    margin-top: 20px;
+}
+.more-suggestions h2{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.more-suggestions__icons{
+    display: flex;
+}
+.more-suggestions__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.more-suggestions__icon img{
+    width: 45px;
+    height: 45px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.more-suggestions__icon span{
+    font-size: 13px;
+    color: var(--gray);
+    margin-top: 5px;
+}

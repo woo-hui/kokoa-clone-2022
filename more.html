@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,68 +23,89 @@
       </div>
     </div>
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <i class="fa-solid fa-magnifying-glass fa-lg"></i>
         <i class="fa-solid fa-music fa-lg"></i>
-        <i class="fa-solid fa-gear fa-lg"></i>
+        <a href="setting.html"><i class="fa-solid fa-gear fa-lg">
+          <span class="badge badge-icon"></span>
+        </i>
+      </a>
       </div>
     </header>
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info fa-xs"></i>
-      <span>Friends' Names Display</span>
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
-
     <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            class="user-component__avatar user-component__avatar--xl"
+            class="user-component__avatar"
             src="https://i1.sndcdn.com/artworks-GLUitTIN4SvF2uOl-oquNLg-t500x500.jpg"
           />
           <div class="user-component__text">
             <h4 class="user-component__title">윤희</h4>
+            <h6 class="user-component__subtitle">
+              +82 010-1234-5678 <i class="fa-solid fa-circle-exclamation"></i>
+            </h6>
           </div>
+        </div>
+        <div class="user-component__column user-component__column-chats">
+          <i class="fa-solid fa-message"></i>
         </div>
       </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
+
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-calendar"></i>
+          <span>Calendar</span>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__avatar user-component__avatar--sm"
-              src="https://www.interview365.com/news/photo/201911/90404_117411_848.jpg"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--sm">
-                김서형
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column user-component__column-channel">
-            <span> 2 </span>
-            <i class="fa-solid fa-angle-right fa-xs"></i>
-          </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-hard-drive">
+            <span class="badge badge-icon-big"></span>
+          </i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-face-kiss"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-brush"></i>
+          <span>Themes</span>
         </div>
       </div>
+    </div>
+    <div class="more-suggestions">
+      <h2> Suggestions </h2>
+      <div class="more-suggestions__icons">
+        <div class="more-suggestions__icon">
+          <img src="https://www.rbbtoday.com/imgs/p/5Mv003Y5bG8YWlzdSjWJq4VMdEMsQ0JFREdG/692810.jpg"/>
+          <span> 에구치 노리코 </span>
+        </div>
+        <div class="more-suggestions__icon">
+          <img src="https://i.pinimg.com/564x/fe/e6/46/fee646f4facc04d6d6004b3370748c32.jpg"/>
+          <span> 탕웨이 </span>
+        </div>
+        <div class="more-suggestions__icon">
+          <img src="https://img.tvreportcdn.de/cms-content/uploads/2022/06/16/57f8c121-a209-4095-8afe-30f8cb0f1fb3.jpg"/>
+          <span> 김신영 </span>
+        </div>
+      </div>
+      </div>
+
+    </div>
     </main>
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fa-solid fa-user fa-lg nav__icon-friend"></i
-          ></a>
+            ><i class="fa-solid fa-user fa-lg"></i>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">6</span>
-            <i class="fa-solid fa-comment fa-lg"></i>
-          </a>
+            <i class="fa-solid fa-comment fa-lg"></i
+          ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="find.html">
@@ -94,15 +115,11 @@
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
             <div></div>
-            <i class="fa-solid fa-ellipsis fa-lg"></i
+            <i class="fa-solid fa-ellipsis fa-lg nav__icon-more"></i
           ></a>
         </li>
       </ul>
     </nav>
-
-    <div id="splash-screen">
-      <i class="fa-solid fa-comment fa-lg"></i>
-    </div>
 
     <div class="no-mobile">
       <span> Your screen is too Big </span>

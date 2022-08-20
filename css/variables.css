@@ -1,1 +1,7 @@
-:root{--yellow: rgb(255, 208, 0); }
+:root{
+    --yellow: rgb(251, 224, 20);
+    --horizontal-space: 15px;
+    --border-option: solid 1px rgba(0,0,0,0.1);
+    --gray:rgb(150, 150, 150);
+    --light-gray:rgb(200,200,200);
+}

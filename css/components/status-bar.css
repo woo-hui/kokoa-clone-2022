@@ -1,10 +1,21 @@
 .status-bar {
     display: flex;
     justify-content: center;
-    padding: 5px 5px;
+    padding: 5px;
+    position: fixed;
+    top:0px;
+    width:100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
 }
 .status-bar__column{
     width: 33%;
+    display:flex;
+    align-items: center;
+}
+.status-bar__column i{
+    font-size: 13px;
 }
 .status-bar span {
     font-size: 13px;
@@ -28,4 +39,7 @@
 }
 .status-bar__column:last-child .fa-battery-three-quarters{
     margin-left: 5px;
+}
+.status-bar__chat{
+    background-color: rgb(199, 216, 233);
 }

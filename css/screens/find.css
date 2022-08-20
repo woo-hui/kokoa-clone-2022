@@ -1,0 +1,31 @@
+.recommended-friends{
+    padding: 12px 0px;
+    border-bottom: var(--border-option);
+}
+.recommended-friends__title{
+    color: var(--gray);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.recommended-friends__text{
+    color: var(--gray);
+    font-size: 14px;
+    display:block;
+    text-align: center;
+    margin: 85px 0px;
+}
+.open-chat{
+    padding-top: 12px;
+}
+.open-chat__title{
+    color: var(--gray);
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.open-chat__title span{
+    font-size: 10px;
+    color: var(--light-gray);
+    letter-spacing: 0.7px;
+}

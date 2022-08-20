@@ -1,0 +1,34 @@
+.alt-header{
+    position:fixed;
+    top:23px;
+    padding: var(--horizontal-space);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 1;
+}
+.alt-header__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.alt-header__column{
+    width: 33%;
+}
+.alt-header__column:nth-child(2){
+    display:flex;
+    justify-content: center;
+ }
+.alt-header__column:last-child{
+   display:flex;
+   justify-content: end;
+}
+.alt-header__column:last-child span:last-child{
+    margin-left: 15px;
+}
+
+.alt-header__chat{
+    background-color: rgb(199, 216, 233);
+}
